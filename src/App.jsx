@@ -2,10 +2,13 @@ import { useState } from 'react'
 
 const Button = ({ handleClick, text }) => {
   //button template
+    console.log("Button text: ", text);
 
-  <button onClick = {handleClick}>
-    {text}
-  </button>
+    return (
+        <button onClick = {handleClick}>
+            {text}
+        </button>
+    )
 }
 
 const App = () => {
@@ -56,9 +59,9 @@ const App = () => {
 
       <h1> give feedback </h1>
 
-      <Button handleClick={goodClick} text='good' />
-      <Button handleClick={neutralClick} text='neutral'/>
-      <Button handleClick={badClick} text='bad'/>
+      <Button fhandleClick={goodClick} text='good' />
+      <Button fhandleClick={neutralClick} text='neutral'/>
+      <Button fhandleClick={badClick} text='bad'/>
 
       <h1> statistics </h1>
       
